@@ -9,11 +9,18 @@ const URL_CURRENT_WEATHER = "currentWeatherExample.json";
 chrome.runtime.onInstalled.addListener(scheduleReloadData);
 chrome.runtime.onStartup.addListener(scheduleReloadData);
 chrome.alarms.onAlarm.addListener(reloadData);
+chrome.browserAction.onClicked.addListener(createPopup);
 
-
+function createPopup() {
+    chrome.tabs.create({
+        url: "local.html"
+    });
+}
 
 function scheduleReloadData() {
-    chrome.alarms.create("reloadData", {periodInMinutes: MINUTE});
+    chrome.alarms.create("reloadData", {
+        delayInMinutes: MINUTE
+    });
 }
 
 

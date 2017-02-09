@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/eventPage.js"></script>
+    <script src="js/popUp.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <style>
+        body {
+            background: floralwhite;
+            font-family: 'Roboto', sans-serif;
+        }
+        .container {
+            width: 640px;
+            margin: 0 auto;
+            margin-top: 20px;
+
+        }
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+
+        .card-image {
+            width: 200px;
+            height: 140px;
+            background-color: white;
+        }
+
+        .card-image > img {
+            width: 100px;
+            height: 100px;
+            padding: 20px 50px 0 50px;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+        }
+
+        .card {
+            margin: 10px;
+            font-family: 'Roboto', sans-serif;
+
+            text-align: center;
+            background-color: white;
+
+        }
+
+        .card-inside {
+            padding: 2px 16px;
+            color: dimgrey;
+        }
+
+        .card-temp {
+            font-size: 40px;
+            padding-bottom: 10px;
+            font-weight: bold;
+        }
+        .card-min, .card-max {
+            font-size: 10px;
+
+        }
+        .card-header {
+
+            font-size: 16px;
+            background-color: #3D6AA2;
+            padding: 20px;
+            color: white;
+
+        }
+
+        .deck {
+            display: flex;
+            justify-content: center;
+        }
+
+        .main-icon > img {
+            height: 200px;
+        }
+        .main-icon {
+            margin: 0 0 80px 90px;
+        }
+
+        .main {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            background-color: #3D6AA2;
+            padding: 10px 10px 0px 50px;
+            color: white;
+
+        }
+        .main:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        .main-temp {
+            padding-top: 90px;
+        }
+
+        .forecast-temp {
+            font-size: 130px;
+            font-weight: bold;
+
+        }
+
+        .forecast-min, .forecast-max {
+            font-size: 16px;
+
+        }
+        .main-grown {
+            font-size: 32px;
+        }
+
+        .card-grown {
+            font-size: 24px;
+        }
+
+        .forecast-max, .card-max {
+            float:right;
+        }
+
+        .forecast-min, .card-min {
+            float: left
+        }
+
+        .title {
+            position: absolute;
+            margin: 20px;
+            font-size: 42px;
+            font-weight: bold;
+            color: #8CACD6;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="title">Madrid</div>
+    <div class="main">
+            <div class="main-temp">
+                <div class="forecast-temp">32°C</div>
+                <div class="forecast-min">MIN <span class="main-grown">12°</span></div>
+                <div class="forecast-max">MAX <span class="main-grown">31°</span></div>
+
+            </div>
+            <div class="main-icon">
+                <img src="icons/01.svg" alt="forecast today" >
+            </div>
+
+    </div>
+    <div class="deck">
+        <div class="card">
+            <div class="card-header">MARTES</div>
+            <div class="card-image"><img src="icons/01.svg" alt="Avatar" ></div>
+            <div class="card-inside">
+                <div class="card-temp">32°C</div>
+                <div class="card-min">MIN <span class="card-grown">12°</span></div>
+                <div class="card-max">MAX <span class="card-grown">31°</span></div>
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">MIÉRCOLES</div>
+
+            <div class="card-image"><img src="icons/02.svg" alt="Avatar" ></div>
+            <div class="card-inside">
+                <div class="card-temp">32°C</div>
+                <div class="card-min">MIN <span class="card-grown">12°</span></div>
+                <div class="card-max">MAX <span class="card-grown">31°</span></div>
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">JUEVES</div>
+
+            <div class="card-image"><img src="icons/09.svg" alt="Avatar" ></div>
+            <div class="card-inside">
+                <div class="card-temp">32°C</div>
+                <div class="card-min">MIN <span class="card-grown">12°</span></div>
+                <div class="card-max">MAX <span class="card-grown">31°</span></div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
