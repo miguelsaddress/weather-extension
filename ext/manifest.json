@@ -2,7 +2,7 @@
   "name": "El tiempo en Madrid",
   "version": "0.0.1",
   "manifest_version": 2,
-  "description": "Visualiza el tiempo desde Chrome.",
+  "description": "Visualiza el tiempo de Madrid desde Chrome.",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -10,7 +10,7 @@
   },
   "background": {
     "persistent": false,
-    "scripts" : ["js/eventPage.js"]
+    "scripts" : ["js/eventPage.js", "js/WeatherApi.js"]
   },
   "browser_action": {
     "default_icon": "icons/spinner.gif"
