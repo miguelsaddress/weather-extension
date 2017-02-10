@@ -5,6 +5,7 @@
   "description": "Visualiza el tiempo de Madrid desde Chrome.",
   "icons": {
     "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
@@ -13,7 +14,7 @@
     "scripts" : ["js/eventPage.js", "js/WeatherApi.js"]
   },
   "browser_action": {
-    "default_icon": "icons/spinner.gif"
+    "default_icon": "icons/icon32.png"
   },
   "permissions": [
     "http://api.openweathermap.org/data/*",
